@@ -3,12 +3,28 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
+.top {
+  background: url("https://www.collegeconsensus.com/wp-content/uploads/2019/04/aerial-photography-architecture-building-1546168-1024x576.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  h1 {
+    font-size: 50px;
+    background: linear-gradient(to right, rgb(233, 94, 94), rgb(25, 0, 255));
+    color: blanchedalmond;
+  }
+}
 .app-menu {
-  background: linear-gradient(#000, cyan);
+  background: linear-gradient(to right, #000, cyan);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 30px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
   a {
     text-decoration: none;
     font-size: 20px;
@@ -26,7 +42,19 @@ body {
 
 .text {
   p {
-    padding: 10px;
+    padding: 30px 10px;
     font-size: 16px;
+  }
+}
+.list {
+  padding: 30px 10px;
+  .list-header {
+    background: #000;
+    color: aliceblue;
+    padding: 20px 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: sticky;
+    top: 103px;
   }
 }
